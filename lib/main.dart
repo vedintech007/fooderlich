@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich/pages/home.dart';
 import 'constants/fooderlich_theme.dart';
 
 void main() {
@@ -13,25 +14,11 @@ class Fooderlich extends StatelessWidget {
     // TODO: Create theme
     final theme = FooderlichTheme.dark();
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        // TODO: Apply Home widget
-        theme: theme,
-        title: "Fooderlich ",
-        home: Scaffold(
-          // TODO: Style the title
-          appBar: AppBar(
-            title: Text(
-              'Fooderlich',
-              style: theme.textTheme.headline6,
-            ),
-          ),
-          // TODO: Style the body text
-          body: Center(
-            child: Text(
-              'Let\'s get cooking👩🏽‍🍳!',
-              style: theme.textTheme.headline1,
-            ),
-          ),
-        ));
+      debugShowCheckedModeBanner: false,
+      // TODO: Apply Home widget
+      theme: theme,
+      title: "Fooderlich ",
+      home: const Home(),
+    );
   }
 }
